@@ -1,19 +1,19 @@
  {{-- option1 --}}
  {{-- generated na value --}}
-{{-- <form action="{{ url('/sample2') }}" method="POST"> --}}
+<form action="{{ url('/sample2') }}" method="POST">
 {{-- option1 --}}
  {{-- {{ csrf_field() }} --}} {{-- requirement of laravel to generate --}}
 {{-- value of csrf_field generated example = "2jOpZBcqoQiYmyzujMw1IbCR8C7eRZJzHPluWZSM" --}}
 
 
 {{-- option2 --}}
- {{-- @csrf  --}}
+ @csrf 
 
- {{-- <input type="hidden" name="foo" value="bar" />
+ <input type="hidden" name="foo" value="bar" />
  <input type="hidden" name="baz" value="boo" /> 
  <input type="submit" value="Send" />
 
- </form>  --}}
+ </form> 
 
 {{-- ========================================================== --}}
 
@@ -37,7 +37,7 @@
 {{-- ================================================== --}}
 {{-- File upload form. --}}
 
-<form action="{{ url('handle-form') }}"
+{{-- <form action="{{ url('handle-form') }}"
  method="POST"
  enctype="multipart/form-data">
 
@@ -46,5 +46,5 @@
  <input type="file" name="book" />
 <input type="submit">
 </form>
-
+ --}}
  

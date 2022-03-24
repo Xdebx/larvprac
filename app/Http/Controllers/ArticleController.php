@@ -11,6 +11,7 @@ class ArticleController extends Controller
 {
     public function index(){
         //return 'From article index';
+        
         return View::make('form');
     }
     public function show($articleId){

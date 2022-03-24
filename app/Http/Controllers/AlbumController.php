@@ -13,10 +13,11 @@ class AlbumController extends Controller
         // //dump($albums);
         // $data['albums'] = $albums;
         // return View::make('album.index',$data);
+       
         //======================================
         $albums = Album::all();
         dd($albums);
-        //dd(compact($albums)); //die and dump
+        dd(compact($albums)); //die and dump
 
      }
 }
